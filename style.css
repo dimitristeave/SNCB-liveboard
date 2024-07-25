@@ -1,0 +1,38 @@
+/*effets de style sur la table : occupe toute la page, les bordures et centrer le contenu textuel*/
+table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align : center;
+      }
+/*taille des bordures du tableau*/
+table, th, td {
+        border: 1px solid black;
+      }
+
+thead {
+        background-color: #1c87c9;
+        color: #ffffff;
+      }
+/*noms des colonnes : centrer les textes, hauteur et couleur de fond*/
+th    {
+        text-align: center;
+        height: 50px;
+        background-color :  #40E0D0;
+      }
+/*couleur de fond des lignes de rang impaire*/
+tbody tr:nth-child(odd) {
+        background: #ffffff;
+      }
+/*couleur de fond des lignes de rang paire*/
+tbody tr:nth-child(even) {
+        background: #f4f4f4;
+      }
+/*centrer le titre et la date du jour*/
+h1,h2 {
+        text-align : center;
+      }
+/*couleur de la date du jour*/
+h2    {
+        color : #F36D8F;
+      }
+

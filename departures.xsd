@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="departures">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="departure" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Delay" type="xs:string"/>
+              <xs:element name="Station" type="xs:string"/>
+              <xs:element name="Time" type="xs:string"/>
+              <xs:element name="Vehicle" type="xs:string"/>
+              <xs:element name="Platform" type="xs:string"/>
+              <xs:element name="Canceled" type="xs:string"/>
+              <xs:element name="Left" type="xs:string"/>
+              <xs:element name="Departure_Connection" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

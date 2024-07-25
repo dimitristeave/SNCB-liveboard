@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>SNCB Departures </title>
+<h2 id="currentDate"></h2>
+<script>
+        function updateCurrentDate() {
+          const currentDateElement = document.getElementById("currentDate");
+          const currentDate = new Date();
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          const formattedDate = currentDate.toLocaleDateString('en-US', options);
+          currentDateElement.textContent = formattedDate;
+        }
+
+        // Mettre &#224; jour la date lors du chargement de la page
+        window.onload = updateCurrentDate;
+
+        // Mettre &#224; jour la date toutes les secondes (1000 millisecondes)
+        setInterval(updateCurrentDate, 1000);
+      </script><link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="refresh" content="60;url=file:///C:/Users/admin/PycharmProjects/SNCB_Disturbances/departures.html">
+</head>
+<body>
+<h1>SNCB Departures</h1>
+<table border="1">
+<tr>
+<th>Delay (min)</th>
+<th>Station</th>
+<th>Time (+2h)</th>
+<th>Vehicle</th>
+<th>Platform</th>
+<th>Canceled</th>
+<th>Left</th>
+<th>Departure Connection</th>
+</tr>
+<tr>
+<td>+0'</td>
+<td>Waremme</td>
+<td>10:43</td>
+<td>BE.NMBS.S445182</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>http://irail.be/connections/8841202/20231117/S445182</td>
+</tr>
+<tr>
+<td>+0'</td>
+<td>Li&#232;ge-Guillemins</td>
+<td>10:58</td>
+<td>BE.NMBS.IC1709</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>http://irail.be/connections/8841202/20231117/IC1709</td>
+</tr>
+<tr>
+<td>+0'</td>
+<td>Quievrain</td>
+<td>11:05</td>
+<td>BE.NMBS.IC1734</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>http://irail.be/connections/8841202/20231117/IC1734</td>
+</tr>
+<tr>
+<td>+0'</td>
+<td>Flemalle-Haute</td>
+<td>11:18</td>
+<td>BE.NMBS.S445161</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>http://irail.be/connections/8841202/20231117/S445161</td>
+</tr>
+<tr>
+<td>+0'</td>
+<td>Kortrijk</td>
+<td>11:35</td>
+<td>BE.NMBS.IC434</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>http://irail.be/connections/8841202/20231117/IC434</td>
+</tr>
+</table>
+</body>
+</html>
